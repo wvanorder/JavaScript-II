@@ -94,7 +94,6 @@ function removeDuplicates(array, cb) {
 const uniqueArr = new Set(array);
 
 return  cb(uniqueArr);
-
 }
 
 removeDuplicates(items, (bam) => {console.log(bam)});

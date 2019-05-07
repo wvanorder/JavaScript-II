@@ -103,6 +103,15 @@ let largeEmail = runners
 console.log(largeEmail);
 
 
-// Problem 2 
+// Problem 2 We want to only have the names of everyone who donated more than that $150 so we can send them off to be added to the banners.
+let bigDonors = runners
+.filter((person) => {
+    return person.donation >=150;
+})
+.map((person) => {
+    return `${person.first_name} ${person.last_name}`;
+})
+
+console.log(bigDonors);
 
 // Problem 3
